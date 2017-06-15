@@ -1,5 +1,3 @@
-Codebook
-========================================================
 #CookBook#
 ##This is taken from the README.txt file in the UCI HAR Dataset##
 
@@ -10,45 +8,45 @@ The sensor signals (accelerometer and gyroscope) were pre_processed by applying 
 For each record it is provided:
 ======================================
 
-_ Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
-_ Triaxial Angular velocity from the gyroscope. 
-_ A 561_feature vector with time and frequency domain variables. 
-_ Its activity label. 
-_ An identifier of the subject who carried out the experiment.
+* Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+* Triaxial Angular velocity from the gyroscope. 
+* A 561_feature vector with time and frequency domain variables. 
+* Its activity label. 
+* An identifier of the subject who carried out the experiment.
 
 The dataset includes the following files:
 =========================================
 
-_ 'README.txt'
+* 'README.txt'
 
-_ 'features_info.txt': Shows information about the variables used on the feature vector.
+* 'features_info.txt': Shows information about the variables used on the feature vector.
 
-_ 'features.txt': List of all features.
+* 'features.txt': List of all features.
 
-_ 'activity_labels.txt': Links the class labels with their activity name.
+* 'activity_labels.txt': Links the class labels with their activity name.
 
-_ 'train/X_train.txt': Training set.
+* 'train/X_train.txt': Training set.
 
-_ 'train/y_train.txt': Training labels.
+* 'train/y_train.txt': Training labels.
 
-_ 'test/X_test.txt': Test set.
+* 'test/X_test.txt': Test set.
 
-_ 'test/y_test.txt': Test labels.
+* 'test/y_test.txt': Test labels.
 
 The following files are available for the train and test data. Their descriptions are equivalent. 
 
-_ 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+* 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 
-_ 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
+* 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
 
-_ 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
+* 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
 
-_ 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
+* 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
 Notes: 
 ======
-_ Features are normalized and bounded within [_1,1].
-_ Each feature vector is a row on the text file.
+* Features are normalized and bounded within [_1,1].
+* Each feature vector is a row on the text file.
 
 For more information about this dataset contact: activityrecognition@smartlab.ws
 
@@ -65,75 +63,63 @@ Jorge L. Reyes_Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012
 
 ### Variable Descriptions
 
+Feature Selection 
+=================
 
-| Variable | Description
-___________|_____________
-| activities | The activity performed
-| subject | Subject ID
-| tbodyacc_mean_x | Mean time for acceleration of body for X direction
-| tbodyacc_mean_y | Mean time for acceleration of body for Y direction
-| tbodyacc_mean_z | Mean time for acceleration of body for Z direction
-| tbodyacc_std_x | Standard deviation of time for acceleration of body for X direction
-| tbodyacc_std_y | Standard deviation of time for acceleration of body for Y direction
-| tbodyacc_std_z | Standard deviation of time for acceleration of body for Z direction
-| tgravityacc_mean_x | Mean time of acceleration of gravity for X direction
-| tgravityacc_mean_y | Mean time of acceleration of gravity for Y direction
-| tgravityacc_mean_z | Mean time of acceleration of gravity for Z direction
-| tgravityacc_std_x | Standard deviation of time of acceleration of gravity for X direction
-| tgravityacc_std_y | Standard deviation of time of acceleration of gravity for Y direction
-| tgravityacc_std_z | Standard deviation of time of acceleration of gravity for Z direction
-| tbodyaccjerk_mean_x | Mean time of body acceleration jerk for X direction
-| tbodyaccjerk_mean_y | Mean time of body acceleration jerk for Y direction
-| tbodyaccjerk_mean_z | Mean time of body acceleration jerk for Z direction
-| tbodyaccjerk_std_x | Standard deviation of time of body acceleration jerk for X direction
-| tbodyaccjerk_std_y | Standard deviation of time of body acceleration jerk for Y direction
-| tbodyaccjerk_std_z | Standard deviation of time of body acceleration jerk for Z direction
-| tbodygyro_mean_x | Mean body gyroscope measurement for X direction
-| tbodygyro_mean_y | Mean body gyroscope measurement for Y direction
-| tbodygyro_mean_z | Mean body gyroscope measurement for Z direction
-| tbodygyro_std_x | Standard deviation of body gyroscope measurement for X direction
-| tbodygyro_std_y | Standard deviation of body gyroscope measurement for Y direction
-| tbodygyro_std_z | Standard deviation of body gyroscope measurement for Z direction
-| tbodygyrojerk_mean_x | Mean jerk signal of body for X direction
-| tbodygyrojerk_mean_y | Mean jerk signal of body for Y direction
-| tbodygyrojerk_mean_z | Mean jerk signal of body for Z direction
-| tbodygyrojerk_std_x | Standard deviation of jerk signal of body for X direction
-| tbodygyrojerk_std_y | Standard deviation of jerk signal of body for Y direction
-| tbodygyrojerk_std_z | Standard deviation of jerk signal of body for Z direction
-| tbodyaccmag_mean | Mean magnitude of body Acc
-| tbodyaccmag_std | Standard deviation of magnitude of body Acc
-| tgravityaccmag_mean | Mean gravity acceleration magnitude
-| tgravityaccmag_std | Standard deviation of gravity acceleration magnitude
-| tbodyaccjerkmag_mean | Mean magnitude of body acceleration jerk
-| tbodyaccjerkmag_std | Standard deviation of magnitude of body acceleration jerk
-| tbodygyromag_mean | Mean magnitude of body gyroscope measurement
-| tbodygyromag_std | Standard deviation of magnitude of body gyroscope measurement
-| tbodygyrojerkmag_mean | Mean magnitude of body body gyroscope jerk measurement
-| tbodygyrojerkmag_std | Standard deviation of magnitude of body body gyroscope jerk measurement
-| fbodyacc_mean_x | Mean frequency of body acceleration for X direction
-| fbodyacc_mean_y | Mean frequency of body acceleration for Y direction
-| fbodyacc_mean_z | Mean frequency of body acceleration for Z direction
-| fbodyacc_std_x | Standard deviation of frequency of body acceleration for X direction
-| fbodyacc_std_y | Standard deviation of frequency of body acceleration for Y direction
-| fbodyacc_std_z | Standard deviation of frequency of body acceleration for Z direction
-| fbodyaccjerk_mean_x | Mean frequency of body accerlation jerk for X direction
-| fbodyaccjerk_mean_y | Mean frequency of body accerlation jerk for Y direction
-| fbodyaccjerk_mean_z | Mean frequency of body accerlation jerk for Z direction
-| fbodyaccjerk_std_x | Standard deviation frequency of body accerlation jerk for X direction
-| fbodyaccjerk_std_y | Standard deviation frequency of body accerlation jerk for Y direction
-| fbodyaccjerk_std_z | Standard deviation frequency of body accerlation jerk for Z direction
-| fbodygyro_mean_x | Mean frequency of body gyroscope measurement for X direction
-| fbodygyro_mean_y | Mean frequency of body gyroscope measurement for Y direction
-| fbodygyro_mean_z | Mean frequency of body gyroscope measurement for Z direction
-| fbodygyro_std_x | Standard deviation frequency of body gyroscope measurement for X direction
-| fbodygyro_std_y | Standard deviation frequency of body gyroscope measurement for Y direction
-| fbodygyro_std_z | Standard deviation frequency of body gyroscope measurement for Z direction
-| fbodyaccmag_mean | Mean frequency of body acceleration magnitude
-| fbodyaccmag_std | Standard deviation of frequency of body acceleration magnitude
-| fbodybodyaccjerkmag_mean | Mean frequency of body acceleration jerk magnitude
-| fbodybodyaccjerkmag_std | Standard deviation of frequency of body acceleration jerk magnitude
-| fbodybodygyromag_mean | Mean frequency of magnitude of body gyroscope measurement
-| fbodybodygyromag_std | Standard deviation of frequency of magnitude of body gyroscope measurement
-| fbodybodygyrojerkmag_mean | Mean frequency of magnitude of body gyroscope jerk measurement
-| fbodybodygyrojerkmag_std | Standard deviation frequency of magnitude of body gyroscope jerk measurement
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+* tBodyAcc-XYZ
+* tGravityAcc-XYZ
+* tBodyAccJerk-XYZ
+* tBodyGyro-XYZ
+* tBodyGyroJerk-XYZ
+* tBodyAccMag
+* tGravityAccMag
+* tBodyAccJerkMag
+* tBodyGyroMag
+* tBodyGyroJerkMag
+* fBodyAcc-XYZ
+* fBodyAccJerk-XYZ
+* fBodyGyro-XYZ
+* fBodyAccMag
+* fBodyAccJerkMag
+* fBodyGyroMag
+* fBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+
+* mean(): Mean value
+* std(): Standard deviation
+* mad(): Median absolute deviation 
+* max(): Largest value in array
+* min(): Smallest value in array
+* sma(): Signal magnitude area
+* energy(): Energy measure. Sum of the squares divided by the number of values. 
+* iqr(): Interquartile range 
+* entropy(): Signal entropy
+* arCoeff(): Autorregresion coefficients with Burg order equal to 4
+* correlation(): correlation coefficient between two signals
+* maxInds(): index of the frequency component with largest magnitude
+* meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+* skewness(): skewness of the frequency domain signal 
+* kurtosis(): kurtosis of the frequency domain signal 
+* bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+* angle(): Angle between to vectors.
+
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+
+* gravityMean
+* tBodyAccMean
+* tBodyAccJerkMean
+* tBodyGyroMean
+* tBodyGyroJerkMean
+
+The complete list of variables of each feature vector is available in 'features.txt'
 
