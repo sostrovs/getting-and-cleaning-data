@@ -1,5 +1,5 @@
-#CookBook#
-##This is taken from the README.txt file in the UCI HAR Dataset##
+# CookBook
+## This is taken from the README.txt file in the UCI HAR Dataset
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19_48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3_axial linear acceleration and 3_axial angular velocity at a constant rate of 50Hz. The experiments have been video_recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
@@ -60,8 +60,6 @@ This dataset is distributed AS_IS and no responsibility implied or explicit can 
 
 Jorge L. Reyes_Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
 
-
-### Variable Descriptions
 
 Feature Selection 
 =================
